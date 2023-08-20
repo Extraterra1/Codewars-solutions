@@ -9,10 +9,11 @@ function isValidWalk(walk) {
   for (const dir of walk) {
     dir == "n" ? yCounter++ : "";
     dir == "s" ? yCounter-- : "";
-    dir == "e" ? yCounter++ : "";
-    dir == "w" ? yCounter-- : "";
+    dir == "e" ? xCounter++ : "";
+    dir == "w" ? xCounter-- : "";
+    if (dir != "n" && dir != "s" && dir != "e" && dir != "w") return false;
   }
-  return yCounter == 0 && xCounter == 0 && walk.length <= 10 ? true : false;
+  return yCounter == 0 && xCounter == 0 && walk.length == 10 ? true : false;
 }
 
 const walk = ["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"];
