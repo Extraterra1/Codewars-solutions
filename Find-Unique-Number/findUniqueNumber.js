@@ -7,9 +7,9 @@
 // The tests contain some very huge arrays, so think about performance.
 
 function findUniq(arr) {
-  return arr.filter((e) => {
+  return arr.find((e) => {
     return arr.lastIndexOf(e) == arr.indexOf(e);
-  })[0];
+  });
 }
 
 const arr = [3, 10, 3, 3, 3];
