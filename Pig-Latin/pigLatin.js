@@ -1,6 +1,11 @@
 function pigIt(str) {
-  const reverse = str.split(' ').map((e) => e.split('').reverse());
+  const regex = /^[A-Za-z]/;
+  const reverse = str
+    .split(' ')
+    .map((e) => (regex.test(e) ? e.split('').slice(1).concat([e[0], 'a', 'y']).join('') : e))
+    .join(' ');
+
   return reverse;
 }
 
-console.log(pigIt('Pig latin is cool'));
+console.log(pigIt('Hello World !'));
