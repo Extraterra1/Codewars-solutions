@@ -12,7 +12,7 @@ const longestWord = (word) => {
 };
 
 console.log(longestWord('The quick brown fox jumps over the lazy dog')); // 'quick'
-console.log(longestWord('A journey of a thousand miles begins with a single step')); // 'journey'
+console.log(longestWord('A journey of a thousand miles begins with a single step')); // 'thousand'
 console.log(longestWord('Programming is an art')); // 'Programming'
 console.log(longestWord('Python, JavaScript, and Ruby are programming languages')); // 'JavaScript' (first occurrence of the longest word)
 console.log(longestWord('The longest word in the English language is pneumonoultramicroscopicsilicovolcanoconiosis')); // 'pneumonoultramicroscopicsilicovolcanoconiosis'
