@@ -14,7 +14,14 @@
 
 // Error checking for text strings or other invalid inputs is not required, only valid positive non-zero integers will be passed into the function.
 
-const DMNLBIT = (num) => {};
+const DMNLBIT = (num) => {
+  return (
+    num
+      .toString()
+      .split('')
+      .reduce((acc, val) => val ** num.toString().length + acc, 0) === num
+  );
+};
 
 console.log(DMNLBIT(153)); /* true */
 console.log(DMNLBIT(1652)); /* false */
