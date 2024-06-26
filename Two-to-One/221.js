@@ -8,4 +8,11 @@
 // a = "abcdefghijklmnopqrstuvwxyz"
 // longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 
-const twoToOne = (s1, s2) => {};
+const twoToOne = (s1, s2) => {
+  return [...new Set((s1 + s2).split(''))].sort().join('');
+};
+
+console.log(twoToOne('xyaabbbccccdefww', 'xxxxyyyyabklmopq')); /* abcdefklmopqwxy */
+console.log(twoToOne('abcdefghijklmnopqrstuvwxyz', 'abcdefghijklmnopqrstuvwxyz')); /* abcdefghijklmnopqrstuvwxyz */
+console.log(twoToOne('codingisfun', 'challengeaccepted')); /* acdefghilnopt */
+console.log(twoToOne('supercalifragilisticexpialidocious', 'pseudopseudohypoparathyroidism')); /* acdefghijklmnoprstuy */
