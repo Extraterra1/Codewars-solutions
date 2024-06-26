@@ -14,5 +14,5 @@ const twoToOne = (s1, s2) => {
 
 console.log(twoToOne('xyaabbbccccdefww', 'xxxxyyyyabklmopq')); /* abcdefklmopqwxy */
 console.log(twoToOne('abcdefghijklmnopqrstuvwxyz', 'abcdefghijklmnopqrstuvwxyz')); /* abcdefghijklmnopqrstuvwxyz */
-console.log(twoToOne('codingisfun', 'challengeaccepted')); /* acdefghilnopt */
-console.log(twoToOne('supercalifragilisticexpialidocious', 'pseudopseudohypoparathyroidism')); /* acdefghijklmnoprstuy */
+console.log(twoToOne('codingisfun', 'challengeaccepted')); /* acdefghilnopstu */
+console.log(twoToOne('supercalifragilisticexpialidocious', 'pseudopseudohypoparathyroidism')); /* acdefghilmoprstuxy */
