@@ -9,9 +9,14 @@
 // ('*', 5, 5) --> 25
 // ('/', 49, 7) --> 7
 
-const BMM = (op, v1, v2) => {};
+const BMM = (op, v1, v2) => {
+  if (op === '+') return v1 + v2;
+  if (op === '-') return v1 - v2;
+  if (op === '*') return v1 * v2;
+  if (op === '/') return v1 / v2;
+};
 
-console.log(BMM('+', 4, 7));
-console.log(BMM('-', 15, 18));
-console.log(BMM('*', 5, 5));
-console.log(BMM('/', 49, 7));
+console.log(BMM('+', 4, 7)); /* 11 */
+console.log(BMM('-', 15, 18)); /* -3 */
+console.log(BMM('*', 5, 5)); /* 25 */
+console.log(BMM('/', 49, 7)); /* 7 */
