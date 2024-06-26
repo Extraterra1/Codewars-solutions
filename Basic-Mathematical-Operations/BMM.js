@@ -10,3 +10,8 @@
 // ('/', 49, 7) --> 7
 
 const BMM = (op, v1, v2) => {};
+
+console.log(BMM('+', 4, 7));
+console.log(BMM('-', 15, 18));
+console.log(BMM('*', 5, 5));
+console.log(BMM('/', 49, 7));
