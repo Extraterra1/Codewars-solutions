@@ -28,7 +28,16 @@
 // Note
 // If you are given an array with multiple answers, return the lowest correct index.
 
-const equalSides = (arr) => {};
+const equalSides = (arr) => {
+  return arr
+    .map((e, i) => {
+      const arr1 = arr.slice(0, i).reduce((acc, val) => acc + val, 0);
+      const arr2 = arr.slice(++i, arr.length).reduce((acc, val) => acc + val, 0);
+
+      return arr1 === arr2;
+    })
+    .findIndex((e) => e === true);
+};
 
 console.log(equalSides([1, 2, 3, 4, 3, 2, 1]));
 console.log(equalSides([1, 100, 50, -51, 1, 1]));
