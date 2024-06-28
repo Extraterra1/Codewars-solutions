@@ -6,7 +6,22 @@
 // 999 --> 4 (because 9*9*9 = 729, 7*2*9 = 126, 1*2*6 = 12, and finally 1*2 = 2, there are 4 multiplications)
 // 4 --> 0 (because 4 is already a one-digit number, there is no multiplication)
 
-const persistentBugger = (num) => {};
+const persistentBugger = (num) => {
+  let counter = 0;
+  const recursion = (n) => {
+    if (n >= 10) {
+      counter++;
+      const res = n
+        .toString()
+        .split('')
+        .reduce((acc, val) => acc * val, 1);
+      recursion(res);
+    }
+    return counter;
+  };
+
+  return recursion(num);
+};
 
 console.log(persistentBugger(39));
 console.log(persistentBugger(999));
