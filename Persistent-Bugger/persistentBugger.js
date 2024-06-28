@@ -7,3 +7,7 @@
 // 4 --> 0 (because 4 is already a one-digit number, there is no multiplication)
 
 const persistentBugger = (num) => {};
+
+console.log(persistentBugger(39));
+console.log(persistentBugger(999));
+console.log(persistentBugger(4));
