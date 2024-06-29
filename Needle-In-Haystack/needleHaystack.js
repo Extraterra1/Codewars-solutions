@@ -11,3 +11,9 @@
 // ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5"
 
 const findNeedle = (arr) => {};
+
+console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])); /* 5 */
+console.log(findNeedle(['hay', 'junk', 'needle', 'hay', 'hay', 'moreJunk', 'randomJunk'])); /* 2 */
+console.log(findNeedle(['needle', 'hay', 'junk', 'hay', 'hay', 'moreJunk', 'randomJunk'])); /* 0 */
+console.log(findNeedle(['hay', 'needle', 'junk', 'hay', 'hay', 'moreJunk', 'randomJunk'])); /* 1 */
+console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'needle', 'moreJunk', 'randomJunk'])); /* 4 */
