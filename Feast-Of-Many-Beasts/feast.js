@@ -1,0 +1,1 @@
+const feast = (beast, dish) => {};
