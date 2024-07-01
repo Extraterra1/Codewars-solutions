@@ -10,3 +10,8 @@
 // ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
 
 const number = (arr) => {};
+
+console.log(number(['a', 'b', 'c']));
+console.log(number([]));
+console.log(number(['joe', 'mama']));
+console.log(number(['penny', 'dime', 'dollar']));
