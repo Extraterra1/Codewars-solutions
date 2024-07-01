@@ -9,7 +9,9 @@
 // [] --> []
 // ["a", "b", "c"] --> ["1: a", "2: b", "3: c"]
 
-const number = (arr) => {};
+const number = (arr) => {
+  return arr.map((e, i) => `${++i}: ${e}`);
+};
 
 console.log(number(['a', 'b', 'c']));
 console.log(number([]));
