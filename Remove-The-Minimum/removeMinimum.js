@@ -12,7 +12,11 @@
 // * Input: [5,3,2,1,4], output = [5,3,2,4]
 // * Input: [2,2,1,2,1], output = [2,2,2,1]
 
-const removeMinimum = (numbers) => {};
+const removeMinimum = (numbers) => {
+  const arr = [...numbers];
+  arr.splice(numbers.indexOf([...numbers].sort((a, b) => a - b)[0]), 1);
+  return arr;
+};
 
 console.log(removeMinimum([5, 3, 2, 1, 4])); /* [5,3,2,4] */
 console.log(removeMinimum([1, 2, 3, 4, 5])); /* [2,3,4,5] */
