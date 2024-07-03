@@ -13,3 +13,8 @@
 // * Input: [2,2,1,2,1], output = [2,2,2,1]
 
 const removeMinimum = (numbers) => {};
+
+console.log(removeMinimum([5, 3, 2, 1, 4])); /* [5,3,2,4] */
+console.log(removeMinimum([1, 2, 3, 4, 5])); /* [2,3,4,5] */
+console.log(removeMinimum([5, 3, 2, 1, 4])); /* [2,2,2,1] */
+console.log(removeMinimum([25, 30, 96, 87, 310, 371, 140, 104, 101, 259, 39, 297, 378, 216, 110, 94, 184, 51, 121]));
