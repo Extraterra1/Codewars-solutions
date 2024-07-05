@@ -22,7 +22,15 @@
 
 // (Condition 2) not fulfilled).
 
-const bouncingBall = (h, bounce, window) => {};
+const bouncingBall = (h, bounce, window) => {
+  if (bounce <= 0 || bounce >= 1 || h < window) return -1;
+  let counter = 1;
+  while (h > window) {
+    h *= bounce;
+    if (h > window) counter += 2;
+  }
+  return counter;
+};
 
 console.log(bouncingBall(3.0, 0.66, 1.5));
 console.log(bouncingBall(30.0, 0.66, 1.5));
