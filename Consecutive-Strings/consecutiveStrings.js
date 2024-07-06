@@ -19,7 +19,15 @@
 // longest_consec(["zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"], 2) --> "abigailtheta"
 // n being the length of the string array, if n = 0 or k > n or k <= 0 return "" (return Nothing in Elm, "nothing" in Erlang).
 
-const longestConsec = (arr, k) => {};
+const longestConsec = (arr, k) => {
+  if (k <= 0 || k > arr.length) return '';
+  return arr.reduce((acc, val, idx) => {
+    for (let i = 1; i < k; i++) {
+      if (arr[idx + i]) val += arr[idx + i];
+    }
+    return val.length > acc.length ? val : acc;
+  }, '');
+};
 
 console.log(longestConsec(['tree', 'foling', 'trashy', 'blue', 'abcdef', 'uvwxyz'], 2));
 // console.log(longestConsec(['tree', 'foling', 'trashy', 'blue', 'abcdef', 'uvwxyz'], 3));
