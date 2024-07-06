@@ -7,3 +7,7 @@
 // "paper", "paper" --> "Draw!"
 
 const rps = (p1, p2) => {};
+
+console.log(rps('rock', 'scissors'));
+console.log(rps('scissors', 'paper'));
+console.log(rps('paper', 'rock'));
