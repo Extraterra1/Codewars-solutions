@@ -10,3 +10,10 @@
 // Note: For 4 or more names, the number in "and 2 others" simply increases.
 
 const likes = (names) => {};
+
+console.log(likes(['Alex', 'Jacob', 'Mark', 'Max']));
+console.log(likes([]));
+console.log(likes(['Peter']));
+console.log(likes(['Jacob', 'Alex']));
+console.log(likes(['Max', 'John', 'Mark']));
+console.log(likes(['Alex', 'Jacob', 'Mark', 'Max']));
