@@ -15,3 +15,5 @@
 // I have also created other katas. Take a look if you enjoyed this kata!
 
 const findMissingLetter = (arr) => {};
+
+console.log(findMissingLetter(['a', 'b', 'c', 'd', 'f']));
