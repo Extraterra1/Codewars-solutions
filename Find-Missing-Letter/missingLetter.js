@@ -14,6 +14,11 @@
 
 // I have also created other katas. Take a look if you enjoyed this kata!
 
-const findMissingLetter = (arr) => {};
+const findMissingLetter = (arr) => {
+  return arr.reduce((acc, val, i) => {
+    if (arr[i + 1] && arr[i + 1].charCodeAt() !== val.charCodeAt() + 1) return String.fromCharCode(val.charCodeAt() + 1);
+    return acc;
+  }, '');
+};
 
 console.log(findMissingLetter(['a', 'b', 'c', 'd', 'f']));
