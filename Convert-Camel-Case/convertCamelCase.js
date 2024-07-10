@@ -9,12 +9,14 @@
 
 function toCamelCase(str) {
   let camelCase = [];
-  const arr = str.replaceAll("_", "-").split("-");
+  const arr = str.replaceAll('_', '-').split('-');
   for (const e of arr.slice(1)) {
     camelCase.push(e[0].toUpperCase() + e.slice(1));
   }
-  return arr[0] + camelCase.join("");
+  return arr[0] + camelCase.join('');
 }
 
-const str = "the_stealth_warrior";
+const str = 'the_stealth_warrior';
 console.log(toCamelCase(str));
+
+const toCamelCase = (str) => {};
