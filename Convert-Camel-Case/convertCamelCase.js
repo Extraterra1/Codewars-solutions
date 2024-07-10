@@ -19,7 +19,13 @@ function toCamelCase(str) {
 // const str = 'the_stealth_warrior';
 // console.log(toCamelCase(str));
 
-const toCamelCaseUpgrade = (str) => {};
+const toCamelCaseUpgrade = (str) => {
+  if (!str) return str;
+  return str.split(/[-_]/).reduce((acc, val, i) => {
+    if (!i && val.at(0).toLowerCase() === val.at(0)) return acc + val;
+    return acc + `${val.at(0).toUpperCase() + val.slice(1)}`;
+  }, '');
+};
 
 console.log(toCamelCaseUpgrade('the_stealth_warrior'));
 console.log(toCamelCaseUpgrade('The_Stealth_Warrior'));
