@@ -16,7 +16,12 @@ function toCamelCase(str) {
   return arr[0] + camelCase.join('');
 }
 
-const str = 'the_stealth_warrior';
-console.log(toCamelCase(str));
+// const str = 'the_stealth_warrior';
+// console.log(toCamelCase(str));
 
-const toCamelCase = (str) => {};
+const toCamelCaseUpgrade = (str) => {};
+
+console.log(toCamelCaseUpgrade('the_stealth_warrior'));
+console.log(toCamelCaseUpgrade('The_Stealth_Warrior'));
+console.log(toCamelCaseUpgrade('The_Stealth-Warrior'));
+console.log(toCamelCaseUpgrade(''));
