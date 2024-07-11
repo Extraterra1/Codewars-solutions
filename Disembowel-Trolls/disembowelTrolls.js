@@ -8,4 +8,10 @@
 
 // Note: for this kata y isn't considered a vowel.
 
-const disemvowel = (str) => {};
+const disemvowel = (str) => {
+  //   return str.replace(/[aeiou]/gi, '');
+};
+
+console.log(disemvowel('This website is for losers LOL!'));
+console.log(disemvowel("No offense but,\nYour writing is among the worst I've ever read"));
+console.log(disemvowel('What are you, a communist?'));
