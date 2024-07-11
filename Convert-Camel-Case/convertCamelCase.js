@@ -16,8 +16,8 @@ function toCamelCase(str) {
   return arr[0] + camelCase.join('');
 }
 
-// const str = 'the_stealth_warrior';
-// console.log(toCamelCase(str));
+const str = 'the_stealth_warrior';
+console.log(toCamelCase(str));
 
 const toCamelCaseUpgrade = (str) => {
   if (!str) return str;
