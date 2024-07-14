@@ -24,7 +24,15 @@ function solve(arr) {
     .reverse();
 }
 
-const arr = [1, 2, 1, 2, 1, 2, 3];
-console.log(solve(arr));
+// const arr = [1, 2, 1, 2, 1, 2, 3];
+// console.log(solve(arr));
 
 const improvedSolve = (arr) => {};
+
+const arr = [1, 2, 1, 2, 1, 2, 3];
+console.log(solve(arr));
+console.log(solve([3, 4, 4, 3, 6, 3]));
+console.log(solve([1, 2, 1, 2, 1, 2, 3]));
+console.log(solve([1, 2, 3, 4]));
+console.log(solve([1, 1, 4, 5, 1, 2, 1]));
+console.log(solve([1, 2, 1, 2, 1, 1, 3]));
