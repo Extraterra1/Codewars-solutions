@@ -27,7 +27,9 @@ function solve(arr) {
 // const arr = [1, 2, 1, 2, 1, 2, 3];
 // console.log(solve(arr));
 
-const improvedSolve = (arr) => {};
+const improvedSolve = (arr) => {
+  return new Set(arr);
+};
 
 const arr = [1, 2, 1, 2, 1, 2, 3];
 console.log(solve(arr));
