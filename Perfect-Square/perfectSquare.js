@@ -11,3 +11,7 @@
 // 114 --> -1 since 114 is not a perfect square
 
 const findNextSquare = (sq) => {};
+
+console.log(findNextSquare(121));
+console.log(findNextSquare(625));
+console.log(findNextSquare(114));
