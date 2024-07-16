@@ -15,3 +15,9 @@
 // However, the arrays can have varying lengths, not just limited to 4.
 
 const binaryArrayToNumber = (arr) => {};
+
+console.log(binaryArrayToNumber([0, 0, 0, 1]));
+console.log(binaryArrayToNumber([0, 0, 0, 1]));
+console.log(binaryArrayToNumber([0, 0, 1, 0]));
+console.log(binaryArrayToNumber([1, 1, 1, 1]));
+console.log(binaryArrayToNumber([0, 1, 1, 0]));
