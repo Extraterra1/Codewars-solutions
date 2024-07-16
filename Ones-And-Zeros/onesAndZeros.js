@@ -14,7 +14,9 @@
 // Testing: [1, 0, 1, 1] ==> 11
 // However, the arrays can have varying lengths, not just limited to 4.
 
-const binaryArrayToNumber = (arr) => {};
+const binaryArrayToNumber = (arr) => {
+  return parseInt(arr.join(''), 2);
+};
 
 console.log(binaryArrayToNumber([0, 0, 0, 1]));
 console.log(binaryArrayToNumber([0, 0, 0, 1]));
