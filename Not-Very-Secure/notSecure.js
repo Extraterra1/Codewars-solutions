@@ -7,6 +7,7 @@
 // No whitespaces / underscore
 
 const alphanumeric = (str) => {
+  if (!str) return false;
   return !/[^a-zA-Z0-9]/.test(str);
 };
 
