@@ -7,3 +7,8 @@
 // No whitespaces / underscore
 
 const alphanumeric = (str) => {};
+
+console.log(alphanumeric('Mazinkaiser'));
+console.log(alphanumeric('"hello world_"'));
+console.log(alphanumeric('PassW0rd'));
+console.log(alphanumeric('                '));
