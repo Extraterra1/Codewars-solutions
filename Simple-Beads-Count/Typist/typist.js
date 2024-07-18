@@ -33,3 +33,15 @@
 // John hit button Caps Lock, A, Caps Lock, a.
 
 const typist = (str) => {};
+
+console.log(typist('a'));
+console.log(typist('aa'));
+console.log(typist('A'));
+console.log(typist('AA'));
+console.log(typist('aA'));
+console.log(typist('Aa'));
+console.log(typist('BeiJingDaXueDongMen'));
+console.log(typist('AAAaaaBBBbbbABAB'));
+console.log(typist('AmericanRAILWAY'));
+console.log(typist('AaAaAa'));
+console.log(typist('DFjfkdaB'));
