@@ -1,0 +1,1 @@
+const typist = (str) => {};
