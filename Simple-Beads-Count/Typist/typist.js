@@ -32,7 +32,14 @@
 
 // John hit button Caps Lock, A, Caps Lock, a.
 
-const typist = (str) => {};
+const typist = (str) => {
+  return str.split('').reduce((acc, val, i) => {
+    const prevUppercase = i > 0 && str[i - 1].toUpperCase() === str[i - 1];
+    const curUppercase = val.toUpperCase() === val;
+    if ((prevUppercase && curUppercase) || (!prevUppercase && !curUppercase)) return acc + 1;
+    return acc + 2;
+  }, 0);
+};
 
 console.log(typist('a'));
 console.log(typist('aa'));
