@@ -6,3 +6,8 @@
 // If there are less than 2 blue beads return 0.
 
 const beadsCount = (n) => {};
+
+console.log(beadsCount(1));
+console.log(beadsCount(0));
+console.log(beadsCount(3));
+console.log(beadsCount(5));
