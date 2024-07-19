@@ -33,3 +33,9 @@
 // NOOO
 
 const typeOut = (str) => {};
+
+console.log(typeOut('[shift]john [shift]green'));
+console.log(typeOut('[shift][unshift]dont shi[shift][unshift]ft th[shift][unshift]is'));
+console.log(typeOut('[holdshift]holdshift[unshift] [shift]shift'));
+console.log(typeOut('[holdshift]abcd[unshift][shift]e[shift]f[holdshift]ghijklmnop[unshift]'));
+console.log(typeOut('[shift]banana and [holdshift]apple[unshift] equals to [shift]orange'));
