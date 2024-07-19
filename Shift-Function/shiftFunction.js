@@ -32,7 +32,12 @@
 
 // NOOO
 
-const typeOut = (str) => {};
+const typeOut = (str) => {
+  return str
+    .replace(/\[holdshift\](.*?)\[unshift\]/g, (_, m) => m.toUpperCase())
+    .replace(/\[shift\]\[unshift\]/g, '')
+    .replace(/\[shift\](.)/g, (_, m) => m.toUpperCase());
+};
 
 console.log(typeOut('[shift]john [shift]green'));
 console.log(typeOut('[shift][unshift]dont shi[shift][unshift]ft th[shift][unshift]is'));
