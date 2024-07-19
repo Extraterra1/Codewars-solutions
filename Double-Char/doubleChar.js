@@ -6,7 +6,9 @@
 // * "1234!_ "     -> "11223344!!__  "
 // Good Luck!
 
-const doubleChar = (str) => {};
+const doubleChar = (str) => {
+  return str.split('').reduce((acc, val) => acc + val + val, '');
+};
 
 console.log(doubleChar('String'));
 console.log(doubleChar('abcd'));
