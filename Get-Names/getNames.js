@@ -10,4 +10,14 @@
 
 // getNames(data) // should return ['Joe', 'Bill', 'Kate']
 
-const getNames = (data) => {};
+const getNames = (data) => {
+  return data.map((e) => e.name);
+};
+
+console.log(
+  getNames([
+    { name: 'Joe', age: 20 },
+    { name: 'Bill', age: 30 },
+    { name: 'Kate', age: 23 }
+  ])
+);
