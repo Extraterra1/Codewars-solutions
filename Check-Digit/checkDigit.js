@@ -27,3 +27,11 @@
 //   checkDigit(87996599994565, 2, 5, 1) -> false, 1 doesn't exist in 9965
 
 const checkDigit = (number, index1, index2, digit) => {};
+
+console.log(checkDigit(67845123654000, 4, 2, 5));
+console.log(checkDigit(87996599994565, 2, 5, 1));
+console.log(checkDigit(1234567, 1, 0, 1));
+console.log(checkDigit(1234567, 0, 1, 2));
+console.log(checkDigit(67845123654, 4, 2, 4));
+console.log(checkDigit(6668844536485, 0, 0, 6));
+console.log(checkDigit(9999999999, 2, 5, 1));
