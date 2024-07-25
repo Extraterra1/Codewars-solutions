@@ -26,7 +26,12 @@
 
 //   checkDigit(87996599994565, 2, 5, 1) -> false, 1 doesn't exist in 9965
 
-const checkDigit = (number, index1, index2, digit) => {};
+const checkDigit = (number, index1, index2, digit) => {
+  return [...number.toString()]
+    .slice(Math.min(index1, index2), Math.max(index1, index2) + 1)
+    .join('')
+    .includes(digit);
+};
 
 console.log(checkDigit(67845123654000, 4, 2, 5));
 console.log(checkDigit(87996599994565, 2, 5, 1));
