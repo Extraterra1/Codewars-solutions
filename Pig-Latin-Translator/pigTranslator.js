@@ -16,7 +16,10 @@
 // Note:
 // If the string input is less than 2 letters, the input should be returned as is
 
-const translate = (str) => {};
+const translate = (str) => {
+  if (str.length < 2) return str;
+  return /[aeiou]/.test(str.at(0)) ? str + 'ay' : str.slice(1) + str.at(0) + 'ay';
+};
 
 console.log(translate('billy'));
 console.log(translate('emily'));
