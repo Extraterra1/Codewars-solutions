@@ -1,0 +1,1 @@
+const translate = (str) => {};
