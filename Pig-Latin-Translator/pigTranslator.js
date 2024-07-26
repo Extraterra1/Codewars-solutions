@@ -17,3 +17,6 @@
 // If the string input is less than 2 letters, the input should be returned as is
 
 const translate = (str) => {};
+
+console.log(translate('billy'));
+console.log(translate('emily'));
