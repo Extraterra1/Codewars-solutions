@@ -8,3 +8,7 @@
 // 0 <= n <= 1000.
 
 const squareUp = (n) => {};
+
+console.log(squareUp(2));
+console.log(squareUp(3));
+console.log(squareUp(4));
