@@ -11,7 +11,9 @@
 // keepOrder([1, 1, 2, 2, 2], 2) //=> 2
 //                 ^(index 2)
 
-const keepOrder = (arr, val) => {};
+const keepOrder = (arr, val) => {
+  return arr.findIndex((e) => e >= val);
+};
 
 // reduce to iterate + i
 
