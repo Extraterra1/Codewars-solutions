@@ -12,3 +12,9 @@
 //                 ^(index 2)
 
 const keepOrder = (arr, val) => {};
+
+// reduce to iterate + i
+
+console.log(keepOrder([1, 2, 3, 4, 7], 5));
+console.log(keepOrder([1, 2, 3, 4, 7], 0));
+console.log(keepOrder([1, 1, 2, 2, 2], 2));
