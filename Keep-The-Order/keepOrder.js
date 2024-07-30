@@ -12,7 +12,9 @@
 //                 ^(index 2)
 
 const keepOrder = (arr, val) => {
-  return arr.findIndex((e) => e >= val);
+  return arr.reduce((acc, e, i) => {
+    return val <= e && acc === arr.length ? i : acc;
+  }, arr.length);
 };
 
 // reduce to iterate + i
