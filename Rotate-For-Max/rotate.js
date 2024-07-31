@@ -24,3 +24,9 @@
 // max_rot(38458215) should return 85821534
 
 const maxRot = (n) => {};
+
+console.log(maxRot(56789));
+console.log(maxRot(38458215));
+console.log(maxRot(195881031));
+console.log(maxRot(896219342));
+console.log(maxRot(69418307));
