@@ -23,7 +23,16 @@
 
 // max_rot(38458215) should return 85821534
 
-const maxRot = (n) => {};
+const maxRot = (n) => {
+  const str = n.toString();
+  return `${n}`.split('').reduce(
+    (acc, val, i) => {
+      const num = acc[i].slice(0, i) + acc[i].slice(i + 1) + acc[i][i];
+      return [...acc, num];
+    },
+    [`${n}`]
+  );
+};
 
 console.log(maxRot(56789));
 console.log(maxRot(38458215));
