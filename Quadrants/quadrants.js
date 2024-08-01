@@ -1,0 +1,1 @@
+const quadrant = (x, y) => {};
