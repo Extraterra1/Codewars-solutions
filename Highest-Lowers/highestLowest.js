@@ -9,7 +9,9 @@
 // There will always be at least one number in the input string.
 // Output string must be two numbers separated by a single space, and highest number is first.
 
-const highestLowest = (str) => {};
+const highestLowest = (str) => {
+  return Math.max(...str.split(' ')) + ' ' + Math.min(...str.split(' '));
+};
 
 console.log(highestLowest('1 2 3 4 5'));
 console.log(highestLowest('1 2 -3 4 5'));
