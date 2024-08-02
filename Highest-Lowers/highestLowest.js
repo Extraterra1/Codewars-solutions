@@ -10,3 +10,7 @@
 // Output string must be two numbers separated by a single space, and highest number is first.
 
 const highestLowest = (str) => {};
+
+console.log(highestLowest('1 2 3 4 5'));
+console.log(highestLowest('1 2 -3 4 5'));
+console.log(highestLowest('1 9 3 4 -5'));
