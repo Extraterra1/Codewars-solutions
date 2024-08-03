@@ -8,7 +8,11 @@
 // [0, 5, 1, 3, 2, 9, 7, 6, 4] --> 8
 // [9, 2, 4, 5, 7, 0, 8, 6, 1] --> 3
 
-const getMissing = (arr) => {};
+const getMissing = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr.indexOf(i) === -1) return i;
+  }
+};
 
 console.log(getMissing([0, 5, 1, 3, 2, 9, 7, 6, 4]));
 console.log(getMissing([9, 2, 4, 5, 7, 0, 8, 6, 1]));
