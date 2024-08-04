@@ -8,7 +8,13 @@
 // {"Hindi": 60, "Dutch" : 93, "Greek": 71}  -->  ["Dutch", "Greek", "Hindi"]
 // {"C++": 50, "ASM": 10, "Haskell": 20}     -->  []
 
-const myLanguages = (skills) => {};
+const myLanguages = (skills) => {
+  const arr = [];
+  for (const key in skills) {
+    if (skills[key] >= 60) arr.push(key);
+  }
+  return arr.sort((a, b) => skills[b] - skills[a]);
+};
 
 console.log(myLanguages({ Java: 10, Ruby: 80, Python: 65 }));
 console.log(myLanguages({ 'C++': 50, ASM: 10, Haskell: 20 }));
