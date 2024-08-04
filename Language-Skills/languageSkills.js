@@ -1,0 +1,1 @@
+const myLanguages = (skills) => {};
