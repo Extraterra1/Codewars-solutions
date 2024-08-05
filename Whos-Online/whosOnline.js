@@ -35,7 +35,15 @@
 //   away: ['Bob']
 // }
 
-const whosOnline = (friends) => {};
+const whosOnline = (friends) => {
+  return friends.reduce((acc, val) => {
+    if (val.status === 'online')
+      if (val.lastActivity > 10) acc.away ? acc.away.push(val.username) : (acc.away = [val.username]);
+      else acc.online ? acc.online.push(val.username) : (acc.online = [val.username]);
+    else acc.offline ? acc.offline.push(val.username) : (acc.offline = [val.username]);
+    return acc;
+  }, {});
+};
 
 console.log(
   whosOnline([
