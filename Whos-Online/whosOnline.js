@@ -36,3 +36,40 @@
 // }
 
 const whosOnline = (friends) => {};
+
+console.log(
+  whosOnline([
+    {
+      username: 'David',
+      status: 'online',
+      lastActivity: 10
+    },
+    {
+      username: 'Lucy',
+      status: 'offline',
+      lastActivity: 22
+    },
+    {
+      username: 'Bob',
+      status: 'online',
+      lastActivity: 104
+    }
+  ])
+);
+
+console.log(
+  whosOnline([
+    {
+      username: 'David',
+      status: 'online',
+      lastActivity: 10
+    },
+    {
+      username: 'Bob',
+      status: 'online',
+      lastActivity: 10
+    }
+  ])
+);
+
+console.log(whosOnline([]));
