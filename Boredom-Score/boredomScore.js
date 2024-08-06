@@ -15,4 +15,58 @@
 // cleaning = 4
 // pissing about = 25
 
+// Depending on the cumulative score of the team, return the appropriate sentiment:
+
+// <=80: 'kill me now'
+// < 100 & > 80: 'i can handle this'
+// 100 or over: 'party time!!'
+
 const boredomScore = (staff) => {};
+
+console.log(
+  boredomScore({
+    tim: 'change',
+    jim: 'accounts',
+    randy: 'canteen',
+    sandy: 'change',
+    andy: 'change',
+    katie: 'IS',
+    laura: 'change',
+    saajid: 'IS',
+    alex: 'trading',
+    john: 'accounts',
+    mr: 'finance'
+  })
+);
+
+console.log(
+  boredomScore({
+    tim: 'IS',
+    jim: 'finance',
+    randy: 'pissing about',
+    sandy: 'cleaning',
+    andy: 'cleaning',
+    katie: 'cleaning',
+    laura: 'pissing about',
+    saajid: 'regulation',
+    alex: 'regulation',
+    john: 'accounts',
+    mr: 'canteen'
+  })
+);
+
+console.log(
+  boredomScore({
+    tim: 'accounts',
+    jim: 'accounts',
+    randy: 'pissing about',
+    sandy: 'finance',
+    andy: 'change',
+    katie: 'IS',
+    laura: 'IS',
+    saajid: 'canteen',
+    alex: 'pissing about',
+    john: 'retail',
+    mr: 'pissing about'
+  })
+);
