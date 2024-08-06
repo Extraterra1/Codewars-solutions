@@ -48,7 +48,7 @@ const boredomScore = (staff) => {
         return acc;
     }
   }, 0);
-  return n > 100 ? 'party time' : n > 80 ? 'i can handle this' : 'kill me now';
+  return n >= 100 ? 'party time' : n > 80 ? 'i can handle this' : 'kill me now';
 };
 
 console.log(
