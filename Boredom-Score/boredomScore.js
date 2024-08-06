@@ -21,7 +21,35 @@
 // < 100 & > 80: 'i can handle this'
 // 100 or over: 'party time!!'
 
-const boredomScore = (staff) => {};
+const boredomScore = (staff) => {
+  const n = Object.keys(staff).reduce((acc, val) => {
+    switch (staff[val]) {
+      case 'accounts':
+        return ++acc;
+      case 'finance':
+        return acc + 2;
+      case 'canteen':
+        return acc + 10;
+      case 'regulation':
+        return acc + 3;
+      case 'trading':
+        return acc + 6;
+      case 'change':
+        return acc + 6;
+      case 'IS':
+        return acc + 8;
+      case 'retail':
+        return acc + 5;
+      case 'cleaning':
+        return acc + 4;
+      case 'pissing about':
+        return acc + 25;
+      default:
+        return acc;
+    }
+  }, 0);
+  return n > 100 ? 'party time' : n > 80 ? 'i can handle this' : 'kill me now';
+};
 
 console.log(
   boredomScore({
@@ -68,5 +96,21 @@ console.log(
     alex: 'pissing about',
     john: 'retail',
     mr: 'pissing about'
+  })
+);
+
+console.log(
+  boredomScore({
+    tim: 'pissing about',
+    jim: 'canteen',
+    randy: 'retail',
+    sandy: 'regulation',
+    andy: 'IS',
+    katie: 'trading',
+    laura: 'IS',
+    saajid: 'accounts',
+    alex: 'pissing about',
+    john: 'accounts',
+    mr: 'IS'
   })
 );
