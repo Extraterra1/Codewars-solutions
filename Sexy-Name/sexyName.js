@@ -14,3 +14,8 @@
 //        score >= 600:  'THE ULTIMATE SEXIEST'
 
 const sexyName = (name) => {};
+
+console.log(sexyName('GUV'));
+console.log(sexyName('BOB'));
+console.log(sexyName('YOU'));
+console.log(sexyName('ROBBY'));
