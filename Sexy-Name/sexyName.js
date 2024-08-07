@@ -1,0 +1,1 @@
+const sexyName = (name) => {};
