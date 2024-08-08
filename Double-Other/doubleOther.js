@@ -9,7 +9,9 @@
 
 // [1,4,3,8]
 
-const doubleOther = (arr) => {};
+const doubleOther = (arr) => {
+  return arr.map((e, i) => (i % 2 !== 0 ? e * 2 : e));
+};
 
 console.log(doubleOther([1, 2, 3, 4]));
 console.log(doubleOther([3, 6, 9, 12]));
