@@ -10,3 +10,7 @@
 // [1,4,3,8]
 
 const doubleOther = (arr) => {};
+
+console.log(doubleOther([1, 2, 3, 4]));
+console.log(doubleOther([3, 6, 9, 12]));
+console.log(doubleOther([100, 123, 213, 453]));
