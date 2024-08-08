@@ -1,0 +1,1 @@
+const doubleOther = (arr) => {};
