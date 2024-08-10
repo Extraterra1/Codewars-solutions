@@ -5,7 +5,11 @@
 // "no" - otherwise
 // You can assume the array will always be valid, and there will always be one correct answer.
 
-const isSorted = (arr) => {};
+const isSorted = (arr) => {
+  const descArr = [...arr].sort((a, b) => b - a);
+  const ascArr = [...arr].sort((a, b) => a - b);
+  return arr.every((val, i) => val === descArr[i]) ? 'yes, descending' : arr.every((val, i) => val === ascArr[i]) ? 'yes, ascending' : 'no';
+};
 
 console.log(isSorted([1, 2]));
 console.log(isSorted([15, 7, 3, -8]));
