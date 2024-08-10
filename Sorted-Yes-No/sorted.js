@@ -6,3 +6,7 @@
 // You can assume the array will always be valid, and there will always be one correct answer.
 
 const isSorted = (arr) => {};
+
+console.log(isSorted([1, 2]));
+console.log(isSorted([15, 7, 3, -8]));
+console.log(isSorted([4, 2, 30]));
