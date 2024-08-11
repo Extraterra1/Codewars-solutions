@@ -14,3 +14,4 @@ const isSorted = (arr) => {
 console.log(isSorted([1, 2]));
 console.log(isSorted([15, 7, 3, -8]));
 console.log(isSorted([4, 2, 30]));
+console.log(isSorted([43, 12, 9876]));
