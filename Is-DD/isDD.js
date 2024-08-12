@@ -1,0 +1,1 @@
+const isDD = (n) => {};
