@@ -8,3 +8,11 @@
 // Your task is to implement a function called is_dd (isDd in javascript) that takes a positive number (type depends on the language) and returns a boolean corresponding to whether the number is a dd number or not.
 
 const isDD = (n) => {};
+
+console.log(isDD(664444309));
+console.log(isDD(30313));
+console.log(isDD(122));
+console.log(isDD(123109));
+console.log(isDD(4312513));
+console.log(isDD(21412455222));
+console.log(isDD(222254654));
