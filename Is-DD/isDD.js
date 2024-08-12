@@ -7,7 +7,13 @@
 // Task
 // Your task is to implement a function called is_dd (isDd in javascript) that takes a positive number (type depends on the language) and returns a boolean corresponding to whether the number is a dd number or not.
 
-const isDD = (n) => {};
+const isDD = (n) => {
+  const str = (n + '').split('');
+  for (let i = 0; i < str.length; i++) {
+    if (str.filter((e) => e == str[i]).length == str[i]) return true;
+  }
+  return false;
+};
 
 console.log(isDD(664444309));
 console.log(isDD(30313));
