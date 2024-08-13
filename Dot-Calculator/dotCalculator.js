@@ -1,0 +1,1 @@
+const dotCalculator = (str) => {};
