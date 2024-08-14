@@ -10,7 +10,10 @@
 
 // archersReady([5, 6, 7, 8]) returns true.
 
-const archerArrows = (arr) => {};
+const archerArrows = (arr) => {
+  return arr[0] ? arr.every((e) => e >= 5) : false;
+};
 
 console.log(archerArrows([5, 6, 7, 8]));
 console.log(archerArrows([1, 2, 3, 4, 5, 6, 7, 8]));
+console.log(archerArrows([]));
