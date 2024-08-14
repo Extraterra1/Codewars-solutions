@@ -11,3 +11,6 @@
 // archersReady([5, 6, 7, 8]) returns true.
 
 const archerArrows = (arr) => {};
+
+console.log(archerArrows([5, 6, 7, 8]));
+console.log(archerArrows([1, 2, 3, 4, 5, 6, 7, 8]));
