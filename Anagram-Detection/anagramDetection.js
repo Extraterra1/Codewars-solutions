@@ -9,7 +9,9 @@
 
 // "Buckethead" is an anagram of "DeathCubeK"
 
-const anagramDetection = (str1, str2) => {};
+const anagramDetection = (str1, str2) => {
+  return [...str2.toLowerCase()].sort().join('') === [...str1.toLowerCase()].sort().join('');
+};
 
 console.log(anagramDetection('foefet', 'toffee'));
 console.log(anagramDetection('Buckethead', 'DeathCubeK'));
