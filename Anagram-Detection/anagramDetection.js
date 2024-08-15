@@ -10,3 +10,7 @@
 // "Buckethead" is an anagram of "DeathCubeK"
 
 const anagramDetection = (str1, str2) => {};
+
+console.log(anagramDetection('foefet', 'toffee'));
+console.log(anagramDetection('Buckethead', 'DeathCubeK'));
+console.log(anagramDetection('dumble', 'bumble'));
