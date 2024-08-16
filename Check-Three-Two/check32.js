@@ -6,3 +6,9 @@
 // ["a", "a", "a", "a", "a"] ==> false // 5x "a"
 
 const check32 = (arr) => {};
+
+console.log(check32(['a', 'a', 'a', 'b', 'b']));
+console.log(check32(['b', 'b', 'b', 'c', 'c']));
+console.log(check32(['b', 'b', 'c', 'c', 'c']));
+console.log(check32(['a', 'b', 'c', 'b', 'c']));
+console.log(check32(['a', 'a', 'a', 'a', 'a']));
