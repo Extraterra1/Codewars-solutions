@@ -12,3 +12,8 @@
 // 1,5,3  --> 5 (1 + 4)
 
 const sumSequence = (begin, end, step) => {};
+
+console.log(sumSequence(2, 2, 2));
+console.log(sumSequence(2, 6, 2));
+console.log(sumSequence(1, 5, 1));
+console.log(sumSequence(1, 5, 3));
