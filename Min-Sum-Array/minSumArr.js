@@ -1,0 +1,1 @@
+const minSum = (arr) => {};
