@@ -8,3 +8,5 @@
 // Input: 123456789 Output: 987654321
 
 const descOrder = (n) => {};
+
+console.log(descOrder(42145));
