@@ -7,7 +7,14 @@
 
 // Input: 123456789 Output: 987654321
 
-const descOrder = (n) => {};
+const descOrder = (n) => {
+  return (
+    `${n}`
+      .split('')
+      .sort((a, b) => b - a)
+      .join('') * 1
+  );
+};
 
 console.log(descOrder(42145));
 console.log(descOrder(31234124));
