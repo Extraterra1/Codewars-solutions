@@ -10,3 +10,6 @@
 const descOrder = (n) => {};
 
 console.log(descOrder(42145));
+console.log(descOrder(31234124));
+console.log(descOrder(65437352));
+console.log(descOrder(123));
