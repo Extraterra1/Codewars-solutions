@@ -13,3 +13,8 @@ console.log(descOrder(42145));
 console.log(descOrder(31234124));
 console.log(descOrder(65437352));
 console.log(descOrder(123));
+console.log(descOrder(5765484));
+console.log(descOrder(213125));
+console.log(descOrder(4564578));
+console.log(descOrder(4378971));
+console.log(descOrder(946341));
