@@ -17,11 +17,7 @@
 // So there are 11 digits 1 for the squares of numbers between 0 and 25.
 
 const countDigit = (n, d) => {
-  const arr = [];
-  for (let i = 0; i <= n; i++) {
-    arr.push(i ** 2);
-  }
-  return arr
+  return Array.from({ length: n + 1 }, (_, i) => i ** 2)
     .join('')
     .split('')
     .filter((e) => e === d + '').length;
