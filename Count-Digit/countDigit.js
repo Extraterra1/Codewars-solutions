@@ -25,7 +25,10 @@ const countDigit = (n, d) => {
 
 console.log(countDigit(10, 1));
 console.log(countDigit(25, 1));
-console.log(nbDig(5750, 0));
-console.log(nbDig(11011, 2));
-console.log(nbDig(12224, 8));
-console.log(nbDig(11549, 1));
+console.log(countDigit(5750, 0));
+console.log(countDigit(11011, 2));
+console.log(countDigit(12224, 8));
+console.log(countDigit(11549, 1));
+console.log(countDigit(123123, 1));
+console.log(countDigit(6789, 1));
+console.log(countDigit(98979798424, 1));
