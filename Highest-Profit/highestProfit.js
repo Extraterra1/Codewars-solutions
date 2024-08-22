@@ -18,3 +18,4 @@ console.log(highestProfit([1, 2, 3, 4, 5]));
 console.log(highestProfit([2, 3, 1]));
 console.log(highestProfit([4142, 54454, 2, 3554, 5]));
 console.log(highestProfit([23, 14, 765, 341, 5]));
+console.log(highestProfit(Array.from({ length: 5 }, () => Math.floor(Math.random() * 100))));
