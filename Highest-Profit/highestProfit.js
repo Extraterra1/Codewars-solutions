@@ -14,3 +14,7 @@
 const highestProfit = (arr) => {};
 
 console.log(highestProfit([2334454, 5]));
+console.log(highestProfit([1, 2, 3, 4, 5]));
+console.log(highestProfit([2, 3, 1]));
+console.log(highestProfit([2334454, 5]));
+console.log(highestProfit([2334454, 5]));
