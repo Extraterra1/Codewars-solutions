@@ -14,6 +14,7 @@
 const i = (word) => {
   const beginsWithI = /^i/gim.test(word);
   const moreVowels = word.match(/[aeiou]/g).length >= word.replace(/[aeiou]/g, '').length;
+  const firstLowercase = word.charCodeAt(0) > 90;
 };
 
 console.log(i('Phone'));
