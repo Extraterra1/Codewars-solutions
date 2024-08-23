@@ -13,6 +13,7 @@
 
 const i = (word) => {
   const beginsWithI = /^i/gim.test(word);
+  const moreVowels = word.match(/[aeiou]/g).length >= word.replace(/[aeiou]/g, '').length;
 };
 
 console.log(i('Phone'));
