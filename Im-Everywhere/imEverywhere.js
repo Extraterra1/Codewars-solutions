@@ -12,3 +12,7 @@
 // If the word does not meet the rules, we return "Invalid word".
 
 const i = (word) => {};
+
+console.log(i('Phone'));
+console.log(i('Inspire'));
+console.log(i('meat'));
