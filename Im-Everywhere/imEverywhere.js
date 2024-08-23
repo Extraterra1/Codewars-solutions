@@ -13,10 +13,15 @@
 
 const i = (word) => {
   const beginsWithI = /^i/gim.test(word);
-  const moreVowels = word.match(/[aeiou]/g).length >= word.replace(/[aeiou]/g, '').length;
+  const moreVowels = word.match(/[aeiou]/gi)?.length >= word.replace(/[aeiou]/gi, '')?.length;
   const firstLowercase = word.charCodeAt(0) > 90;
+
+  return word && !beginsWithI && !moreVowels && !firstLowercase ? 'i' + word : 'Invalid word';
 };
 
 console.log(i('Phone'));
 console.log(i('Inspire'));
 console.log(i('meat'));
+console.log(i('East'));
+console.log(i('wwwwww'));
+console.log(i(''));
