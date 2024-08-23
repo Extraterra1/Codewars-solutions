@@ -11,7 +11,9 @@
 // The first letter should not be lowercase, for example road.
 // If the word does not meet the rules, we return "Invalid word".
 
-const i = (word) => {};
+const i = (word) => {
+  const beginsWithI = /^i/gim.test(word);
+};
 
 console.log(i('Phone'));
 console.log(i('Inspire'));
