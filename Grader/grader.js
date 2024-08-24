@@ -7,11 +7,15 @@
 // 0.7 or greater	"C"
 // 0.6 or greater	"D"
 
-const grader = (num) => {};
+const grader = (num) => {
+  return num > 1 ? 'F' : num >= 0.9 ? 'A' : num >= 0.8 ? 'B' : num >= 0.7 ? 'C' : num >= 0.6 ? 'D' : 'F';
+};
 
-console.log(grader(0));
-console.log(grader(1.1));
-console.log(grader(0.9));
+// console.log(grader(0));
+// console.log(grader(1.1));
+// console.log(grader(0.9));
+// console.log(grader(0.8));
+// console.log(grader(0.7));
+// console.log(grader(0.6));
+
 console.log(grader(0.8));
-console.log(grader(0.7));
-console.log(grader(0.6));
