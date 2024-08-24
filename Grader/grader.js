@@ -8,3 +8,10 @@
 // 0.6 or greater	"D"
 
 const grader = (num) => {};
+
+console.log(grader(0));
+console.log(grader(1.1));
+console.log(grader(0.9));
+console.log(grader(0.8));
+console.log(grader(0.7));
+console.log(grader(0.6));
