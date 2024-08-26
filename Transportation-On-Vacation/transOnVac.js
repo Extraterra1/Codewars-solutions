@@ -6,7 +6,9 @@
 
 // Write a code that gives out the total amount for different days(d).
 
-const transOnVac = (d) => {};
+const transOnVac = (d) => {
+  return d * 40 - (d >= 7 ? 50 : d >= 3 ? 20 : 0);
+};
 
 console.log(transOnVac(1));
 console.log(transOnVac(2));
@@ -14,3 +16,5 @@ console.log(transOnVac(3));
 console.log(transOnVac(4));
 console.log(transOnVac(5));
 console.log(transOnVac(6));
+console.log(transOnVac(7));
+console.log(transOnVac(8));
