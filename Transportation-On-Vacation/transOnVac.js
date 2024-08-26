@@ -10,3 +10,7 @@ const transOnVac = (d) => {};
 
 console.log(transOnVac(1));
 console.log(transOnVac(2));
+console.log(transOnVac(3));
+console.log(transOnVac(4));
+console.log(transOnVac(5));
+console.log(transOnVac(6));
