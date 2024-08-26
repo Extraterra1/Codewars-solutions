@@ -7,3 +7,6 @@
 // Write a code that gives out the total amount for different days(d).
 
 const transOnVac = (d) => {};
+
+console.log(transOnVac(1));
+console.log(transOnVac(2));
