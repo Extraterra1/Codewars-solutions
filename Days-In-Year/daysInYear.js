@@ -18,3 +18,7 @@ const daysInYear = (n) => {};
 console.log(daysInYear(0));
 console.log(daysInYear(-64));
 console.log(daysInYear(2016));
+console.log(daysInYear(2200));
+console.log(daysInYear(2100));
+console.log(daysInYear(2000));
+console.log(daysInYear(1900));
