@@ -14,3 +14,7 @@
 // So the years 0, -64 and 2016 will return 366 days. Whilst 1974, -10 and 666 will return 365 days.
 
 const daysInYear = (n) => {};
+
+console.log(daysInYear(0));
+console.log(daysInYear(-64));
+console.log(daysInYear(2016));
