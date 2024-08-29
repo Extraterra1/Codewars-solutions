@@ -1,0 +1,1 @@
+const wheatProblem = (n) => {};
