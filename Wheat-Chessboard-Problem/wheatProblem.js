@@ -12,7 +12,15 @@
 // and etc.
 // Input is always going to be valid/reasonable: ie: a non negative number; extra cookie for not using a loop to compute square-by-square (at least not directly) and instead trying a smarter approach [hint: some peculiar operator]; a trick converting the number might also work: impress me!
 
-const wheatProblem = (n) => {};
+const wheatProblem = (n) => {
+  let n = 0;
+  let a = 1;
+  while (a - 1 < g) {
+    a = a * 2;
+    n++;
+  }
+  return n;
+};
 
 // console.log(wheatProblem(0));
 console.log(wheatProblem(1));
