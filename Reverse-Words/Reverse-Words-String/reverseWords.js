@@ -8,7 +8,9 @@
 // "Hi There." --> "There. Hi"
 // Happy coding!
 
-const reverse = (str) => {};
+const reverse = (str) => {
+  return str.split(' ').reverse().join(' ');
+};
 
 console.log(reverse('Hello World'));
 console.log(reverse('I am an expert at this'));
