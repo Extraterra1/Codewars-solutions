@@ -8,3 +8,7 @@
 // Array will always be valid (odd-length >= 3)
 
 const meanMedian = (arr) => {};
+
+console.log(meanMedian([1, 1, 1]));
+console.log(meanMedian([1, 2, 27]));
+console.log(meanMedian([7, 14, -70]));
