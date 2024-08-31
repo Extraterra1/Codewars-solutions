@@ -10,7 +10,7 @@
 const meanMedian = (arr) => {
   const mid = Math.floor(arr.length / 2);
   const mean = arr.reduce((acc, val) => acc + val, 0) / arr.length;
-  const median = arr.length % 2 ? arr[mid] : (arr[mid] + arr[mid - 1]) / 2;
+  const median = arr.sort((a, b) => a - b)[mid];
 
   return median > mean ? 'median' : median === mean ? 'same' : 'mean';
 };
@@ -22,3 +22,4 @@ console.log(meanMedian([32, 1344, 7120]));
 console.log(meanMedian([743, 124, 23]));
 console.log(meanMedian([17, 24, 34]));
 console.log(meanMedian([71, 142, -30]));
+console.log(meanMedian([-10, 20, 5]));
