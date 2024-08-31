@@ -7,7 +7,13 @@
 
 // Array will always be valid (odd-length >= 3)
 
-const meanMedian = (arr) => {};
+const meanMedian = (arr) => {
+  const mid = Math.floor(arr.length / 2);
+  const mean = arr.reduce((acc, val) => acc + val, 0) / arr.length;
+  const median = arr.length % 2 ? arr[mid] : (arr[mid] + arr[mid - 1]) / 2;
+
+  return median > mean ? 'median' : median === mean ? 'same' : 'mean';
+};
 
 console.log(meanMedian([1, 1, 1]));
 console.log(meanMedian([1, 2, 27]));
