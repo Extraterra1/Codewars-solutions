@@ -12,3 +12,7 @@ const meanMedian = (arr) => {};
 console.log(meanMedian([1, 1, 1]));
 console.log(meanMedian([1, 2, 27]));
 console.log(meanMedian([7, 14, -70]));
+console.log(meanMedian([32, 1344, 7120]));
+console.log(meanMedian([743, 124, 23]));
+console.log(meanMedian([17, 24, 34]));
+console.log(meanMedian([71, 142, -30]));
