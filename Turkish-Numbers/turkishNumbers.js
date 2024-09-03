@@ -13,7 +13,9 @@
 const digits = ['sıfır', 'bir', 'iki', 'üç', 'dört', 'beş', 'altı', 'yedi', 'sekiz', 'dokuz'];
 const tens = ['on', 'yirmi', 'otuz', 'kırk', 'elli', 'altmış', 'yetmiş', 'seksen', 'doksan'];
 
-const turkishNumbers = (n) => {};
+const turkishNumbers = (n) => {
+  return n < 10 ? digits[n] : `${tens[Math.floor(n / 10) - 1]} ${n % 10 ? digits[(n + '')[1]] : ''}`;
+};
 
 console.log(turkishNumbers(1));
 console.log(turkishNumbers(32));
