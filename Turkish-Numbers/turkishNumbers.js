@@ -17,3 +17,5 @@ const turkishNumbers = (n) => {};
 
 console.log(turkishNumbers(1));
 console.log(turkishNumbers(32));
+console.log(turkishNumbers(30));
+console.log(turkishNumbers(70));
