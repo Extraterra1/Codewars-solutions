@@ -19,3 +19,5 @@ console.log(turkishNumbers(1));
 console.log(turkishNumbers(32));
 console.log(turkishNumbers(30));
 console.log(turkishNumbers(70));
+console.log(turkishNumbers(16));
+console.log(turkishNumbers(26));
