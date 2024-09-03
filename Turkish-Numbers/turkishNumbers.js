@@ -10,4 +10,10 @@
 // all other numbers are simply [tens] + [unit], like twenty one in English.
 // Unlike English, Turkish does not have "teen"-suffixed numbers; e.g. 13 would be directly translated as "ten three" rather than "thirteen" in English.
 
+const digits = ['sıfır', 'bir', 'iki', 'üç', 'dört', 'beş', 'altı', 'yedi', 'sekiz', 'dokuz'];
+const tens = ['on', 'yirmi', 'otuz', 'kırk', 'elli', 'altmış', 'yetmiş', 'seksen', 'doksan'];
+
 const turkishNumbers = (n) => {};
+
+console.log(turkishNumbers(1));
+console.log(turkishNumbers(32));
