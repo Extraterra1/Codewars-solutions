@@ -11,10 +11,9 @@
 // "trend"  returns "t" (all the characters are unique)
 // "aabbcc" returns null (all the characters are repeated)
 
-const firstNonRepeated = (str) => {};
+const firstNonRepeated = (str) => {
+  return [...str].reduce((acc, val) => (!acc && [...str].filter((e) => e === val).length === 1 ? val : acc), null);
+};
 
 console.log(firstNonRepeated('test'));
 console.log(firstNonRepeated('teeter'));
-console.log(firstNonRepeated('teet'));
-console.log(firstNonRepeated('1122321235121222'));
-console.log(firstNonRepeated('rend'));
