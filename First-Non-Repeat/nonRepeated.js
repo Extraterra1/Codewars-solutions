@@ -16,3 +16,5 @@ const firstNonRepeated = (str) => {};
 console.log(firstNonRepeated('test'));
 console.log(firstNonRepeated('teeter'));
 console.log(firstNonRepeated('teet'));
+console.log(firstNonRepeated('1122321235121222'));
+console.log(firstNonRepeated('rend'));
