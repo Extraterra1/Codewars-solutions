@@ -12,3 +12,7 @@
 // "aabbcc" returns null (all the characters are repeated)
 
 const firstNonRepeated = (str) => {};
+
+console.log(firstNonRepeated('test'));
+console.log(firstNonRepeated('teeter'));
+console.log(firstNonRepeated('teet'));
