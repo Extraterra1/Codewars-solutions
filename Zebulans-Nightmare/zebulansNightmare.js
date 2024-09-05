@@ -8,7 +8,9 @@
 // zebulansNightmare('convert_to_uppercase') == 'convertToUppercase'
 // zebulansNightmare('main') == 'main'
 
-const zebNightmare = (str) => {};
+const zebNightmare = (str) => {
+  return str.split('_').reduce((acc, val, i) => (!i ? val : acc + val[0].toUpperCase() + val.slice(1)));
+};
 
 console.log(zebNightmare('camel_case'));
 console.log(zebNightmare('zebulans_nightmare'));
