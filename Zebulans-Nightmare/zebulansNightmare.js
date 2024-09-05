@@ -15,3 +15,6 @@ console.log(zebNightmare('zebulans_nightmare'));
 console.log(zebNightmare('main'));
 console.log(zebNightmare('convert_to_uppercase'));
 console.log(zebNightmare('get_string'));
+console.log(zebNightmare('mark_as_issue'));
+console.log(zebNightmare('copy_paste_pep8'));
+console.log(zebNightmare('goto_next_kata'));
