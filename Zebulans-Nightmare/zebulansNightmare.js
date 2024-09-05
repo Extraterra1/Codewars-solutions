@@ -13,3 +13,5 @@ const zebNightmare = (str) => {};
 console.log(zebNightmare('camel_case'));
 console.log(zebNightmare('zebulans_nightmare'));
 console.log(zebNightmare('main'));
+console.log(zebNightmare('convert_to_uppercase'));
+console.log(zebNightmare('get_string'));
