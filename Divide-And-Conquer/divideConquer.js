@@ -2,7 +2,9 @@
 
 // Return as a number.
 
-const divideConquer = (arr) => {};
+const divideConquer = (arr) => {
+  return arr.reduce((acc, val) => (typeof val === 'number' ? acc + val : acc - val), 0);
+};
 
 console.log(divideConquer([9, 3, '7', '3']), 'should equal 2');
 console.log(divideConquer(['5', '0', 9, 3, 2, 1, '9', 6, 7]), 'should equal 14');
