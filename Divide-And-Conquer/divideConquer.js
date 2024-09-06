@@ -1,0 +1,1 @@
+const divideConquer = (arr) => {};
