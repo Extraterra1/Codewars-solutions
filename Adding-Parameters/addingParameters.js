@@ -15,7 +15,9 @@
 //   add(1,2,3); //=> 14
 //   add(1,4,-5,5); //=> 14
 
-const add = (...args) => {};
+const add = (...args) => {
+  return args.reduce((acc, val, i) => (acc += val * ++i), 0);
+};
 
 console.log(add(1, 2, 3));
 console.log(add(1, 4, -5, 5));
