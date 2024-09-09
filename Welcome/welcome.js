@@ -7,3 +7,5 @@
 const welcome = (language) => {};
 
 console.log(welcome('english'));
+console.log(welcome('dutch'));
+console.log(welcome('IP_ADDRESS_INVALID'));
