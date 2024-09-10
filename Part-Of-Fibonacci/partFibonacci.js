@@ -4,7 +4,13 @@
 
 // Good luck, muh fellow coding warrior.
 
-const isFibo = (a, b, f) => {};
+const isFibo = (a, b, f) => {
+  const sequence = [a, b];
+  while (sequence.at(-1) <= f) {
+    sequence.push(sequence.at(-1) + sequence.at(-2));
+  }
+  return sequence.includes(f);
+};
 
 console.log(isFibo(0, 1, 2));
 console.log(isFibo(1, 4, 10));
