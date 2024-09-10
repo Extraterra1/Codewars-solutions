@@ -9,3 +9,5 @@ const isFibo = (a, b, f) => {};
 console.log(isFibo(0, 1, 2));
 console.log(isFibo(1, 4, 10));
 console.log(isFibo(4, 5, 23));
+console.log(isFibo(100, 101, 301));
+console.log(isFibo(1, 3, 1));
