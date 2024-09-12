@@ -15,3 +15,6 @@ const trilingualDemocracy = (group) => {};
 
 console.log(trilingualDemocracy('FFF'));
 console.log(trilingualDemocracy('FFK'));
+console.log(trilingualDemocracy('FDI'));
+console.log(trilingualDemocracy('IIK'));
+console.log(trilingualDemocracy('DFK'));
