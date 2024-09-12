@@ -15,8 +15,8 @@ const trilingualDemocracy = (group) => {
   for (let i = 0; i < group.length; i++) {
     if ([...group].every((e) => e === group[i])) return group[i];
     if ([...group].filter((e) => e === group[i]).length === 2) return [...group].find((e) => e !== group[i]);
-    return ['D', 'F', 'I', 'K'].find((e) => ![...group].includes(e));
   }
+  return ['D', 'F', 'I', 'K'].find((e) => ![...group].includes(e));
 };
 
 console.log(trilingualDemocracy('FFF'));
