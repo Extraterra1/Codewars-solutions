@@ -11,10 +11,17 @@
 
 // The languages are encoded by the letters D for Deutsch, F for Français, I for Italiano, and K for Rumantsch.6
 
-const trilingualDemocracy = (group) => {};
+const trilingualDemocracy = (group) => {
+  for (let i = 0; i < group.length; i++) {
+    if ([...group].every((e) => e === group[i])) return group[i];
+    if ([...group].filter((e) => e === group[i]).length === 2) return [...group].find((e) => e !== group[i]);
+    return ['D', 'F', 'I', 'K'].find((e) => ![...group].includes(e));
+  }
+};
 
 console.log(trilingualDemocracy('FFF'));
 console.log(trilingualDemocracy('FFK'));
 console.log(trilingualDemocracy('FDI'));
 console.log(trilingualDemocracy('IIK'));
 console.log(trilingualDemocracy('DFK'));
+console.log(trilingualDemocracy('IDD'));
