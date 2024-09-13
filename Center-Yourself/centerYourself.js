@@ -8,7 +8,10 @@
 
 // If strng is longer than width return strng unchanged.
 
-const center = (str, width, fill = ' ') => {};
+const center = (str, width, fill = ' ') => {
+  if (width < str.length) return str;
+  return fill.repeat(Math.ceil((width - str.length) / 2)) + str + fill.repeat(Math.floor((width - str.length) / 2));
+};
 
 console.log(center('a', 3));
 console.log(center('a', 3, 'x'));
