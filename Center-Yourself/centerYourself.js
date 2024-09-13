@@ -14,3 +14,5 @@ console.log(center('a', 3));
 console.log(center('a', 3, 'x'));
 console.log(center('abcdefg', 3, 'x'));
 console.log(center('', 3, '_'));
+console.log(center('abcdefg', 2, '_'));
+console.log(center('____abc___', 10, '_'));
