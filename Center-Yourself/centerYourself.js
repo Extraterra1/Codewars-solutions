@@ -9,3 +9,8 @@
 // If strng is longer than width return strng unchanged.
 
 const center = (str, width, fill = ' ') => {};
+
+console.log(center('a', 3));
+console.log(center('a', 3, 'x'));
+console.log(center('abcdefg', 3, 'x'));
+console.log(center('', 3, '_'));
