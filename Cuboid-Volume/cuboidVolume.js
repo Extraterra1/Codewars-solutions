@@ -3,3 +3,4 @@
 const volume = (length, width, height) => {};
 
 console.log(volume(1, 2, 2));
+console.log(volume(6, 2, 5));
