@@ -8,3 +8,5 @@
 const usd2cny = (n) => {
   return n * 6.75;
 };
+
+console.log(usd2cny(2.5));
