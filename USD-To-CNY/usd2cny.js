@@ -6,7 +6,7 @@
 //The conversion rate you should use is 6.75 CNY for every 1 USD. All numbers should be represented as a string with 2 decimal places. (e.g. "21.00" NOT "21.0" or "21")
 
 const usd2cny = (n) => {
-  return n * 6.75;
+  return (n * 6.75).toFixed(2) + ' Chinese Yuan';
 };
 
-console.log(usd2cny(2.5));
+console.log(usd2cny(8376));
