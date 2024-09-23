@@ -10,3 +10,6 @@ const usd2cny = (n) => {
 };
 
 console.log(usd2cny(8376));
+console.log(usd2cny(213));
+console.log(usd2cny(123));
+console.log(usd2cny(7462));
