@@ -16,3 +16,5 @@
 // floor(44.2) = 44
 
 const sumAvg = (arr1, arr2) => {};
+
+console.log(sumAvg([10, 10, 10]));
