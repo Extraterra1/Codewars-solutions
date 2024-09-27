@@ -15,7 +15,9 @@
 // Round the final average down:
 // floor(44.2) = 44
 
-const sumAvg = (arr) => {};
+const sumAvg = (arr) => {
+  return Math.floor(arr.map((e) => e.reduce((acc, val) => acc + val) / e.length).reduce((acc, val) => acc + val));
+};
 
 console.log(
   sumAvg([
