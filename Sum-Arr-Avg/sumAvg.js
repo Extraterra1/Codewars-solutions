@@ -15,6 +15,19 @@
 // Round the final average down:
 // floor(44.2) = 44
 
-const sumAvg = (arr1, arr2) => {};
+const sumAvg = (arr) => {};
 
-console.log(sumAvg([10, 10, 10]));
+console.log(
+  sumAvg([
+    [3, 4, 1, 3, 5, 1, 4],
+    [21, 54, 33, 21, 77]
+  ])
+);
+
+console.log(
+  sumAvg([
+    [-4, 3, -8, -2],
+    [2, 9, 1, -5],
+    [-7, -2, -6, -4]
+  ])
+);
