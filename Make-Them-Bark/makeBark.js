@@ -24,3 +24,6 @@ function Dog(name, breed, sex, age) {
 
 const apollo = new Dog('Apollo', 'Dobermann', 'male', '4');
 console.log(apollo.bark());
+
+const zeus = new Dog('Zeus', 'Dobermann', 'male', '4');
+console.log(zeus.bark());
