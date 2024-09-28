@@ -21,3 +21,6 @@ function Dog(name, breed, sex, age) {
     return 'Woof!';
   };
 }
+
+const apollo = new Dog('Apollo', 'Dobermann', 'male', '4');
+console.log(apollo.bark());
