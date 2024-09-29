@@ -5,3 +5,5 @@
 const noOddities = (arr) => {};
 
 console.log(noOddities([1, 2, 3]));
+console.log(noOddities([0, 1]));
+console.log(noOddities([0, 1, 2, 3]));
