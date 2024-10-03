@@ -7,7 +7,10 @@
 
 // The input array has the sort method disabled, so you will have to solve it in another way.
 
-const diffBig2 = (arr) => {};
+const diffBig2 = (arr) => {
+  const sorted = arr.sort((a, b) => b - a);
+  return sorted[0] - sorted[1];
+};
 
 console.log(diffBig2([5, 10, 2]));
 console.log(diffBig2([31, 2, 4]));
