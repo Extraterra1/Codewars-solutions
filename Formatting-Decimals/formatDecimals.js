@@ -1,0 +1,1 @@
+const formatDecimals = (n) => {};
