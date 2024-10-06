@@ -4,7 +4,9 @@
 // 5.5589 is rounded 5.56
 // -3.3424 is rounded -3.34
 
-const formatDecimals = (n) => {};
+const formatDecimals = (n) => {
+  return +n.toFixed(2);
+};
 
 console.log(formatDecimals(5.5589));
 console.log(formatDecimals(-3.3424));
