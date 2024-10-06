@@ -7,3 +7,4 @@
 const formatDecimals = (n) => {};
 
 console.log(formatDecimals(5.5589));
+console.log(formatDecimals(-3.3424));
