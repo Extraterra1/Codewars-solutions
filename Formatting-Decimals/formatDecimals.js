@@ -5,3 +5,5 @@
 // -3.3424 is rounded -3.34
 
 const formatDecimals = (n) => {};
+
+console.log(formatDecimals(5.5589));
