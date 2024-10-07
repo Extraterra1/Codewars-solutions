@@ -8,3 +8,6 @@
 // Good luck!
 
 const solve = (s) => {};
+
+console.log(solve("*'&ABCDabcde12345"));
+console.log(solve(''));
