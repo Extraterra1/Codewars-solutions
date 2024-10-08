@@ -1,0 +1,1 @@
+const lastSurvivor = (str, coords) => {};
