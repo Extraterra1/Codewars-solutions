@@ -13,3 +13,6 @@
 // text after  = "zzz"
 
 const contamination = (text, char) => {};
+
+console.log(contamination('abc', 'z'));
+console.log(contamination('', 'z'));
