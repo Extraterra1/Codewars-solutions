@@ -12,7 +12,9 @@
 // character   = "z"
 // text after  = "zzz"
 
-const contamination = (text, char) => {};
+const contamination = (text, char) => {
+  return char.repeat(text.length);
+};
 
 console.log(contamination('abc', 'z'));
 console.log(contamination('', 'z'));
