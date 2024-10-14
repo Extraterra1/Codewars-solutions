@@ -5,3 +5,5 @@
 // Input will be a string with length > 0.
 
 const move10 = (str) => {};
+
+console.log(move10('testcase'));
