@@ -4,7 +4,9 @@
 
 // The array will never be empty.
 
-const mean = (arr) => {};
+const mean = (arr) => {
+  return Math.floor(arr.reduce((acc, val) => acc + val) / arr.length);
+};
 
 console.log(mean([2, 2, 2, 2]));
 console.log(mean([1, 2, 3, 4, 5]));
