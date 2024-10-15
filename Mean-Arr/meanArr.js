@@ -5,3 +5,7 @@
 // The array will never be empty.
 
 const mean = (arr) => {};
+
+console.log(mean([2, 2, 2, 2]));
+console.log(mean([1, 2, 3, 4, 5]));
+console.log(mean([1, 1, 1, 1, 1, 1, 1, 2]));
