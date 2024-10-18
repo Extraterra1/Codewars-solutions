@@ -1,0 +1,1 @@
+const multiples = (m, n) => {};
