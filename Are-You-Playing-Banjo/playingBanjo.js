@@ -7,7 +7,9 @@
 // name + " does not play banjo"
 // Names given are always valid strings.
 
-const playingBanjo = (name) => {};
+const playingBanjo = (name) => {
+  return name.match(/^r/i) ? `${name} plays banjo` : `${name} does not play banjo`;
+};
 
 console.log(playingBanjo('Adam'));
 console.log(playingBanjo('Ringo'));
