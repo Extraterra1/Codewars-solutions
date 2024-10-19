@@ -8,3 +8,9 @@
 // Names given are always valid strings.
 
 const playingBanjo = (name) => {};
+
+console.log(playingBanjo('Adam'));
+console.log(playingBanjo('Ringo'));
+console.log(playingBanjo('bravo'));
+console.log(playingBanjo('Paul'));
+console.log(playingBanjo('robert'));
