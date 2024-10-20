@@ -1,0 +1,1 @@
+const duckGoose = (arr, n) => {};
