@@ -11,4 +11,10 @@
 // duck_duck_goose([a, b, c, d], 5) should return a.name
 // duck_duck_goose([a, b, c, d], 4) should return d.name
 
-const duckGoose = (arr, n) => {};
+const duckGoose = (players, goose) => {
+  return players[(goose - 1) % players.length];
+};
+
+console.log(duckGoose(['a', 'b', 'c', 'd'], 1));
+console.log(duckGoose(['a', 'b', 'c', 'd'], 4));
+console.log(duckGoose(['a', 'b', 'c', 'd', 'e', 'f'], 7));
