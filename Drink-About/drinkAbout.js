@@ -18,7 +18,12 @@
 // 20 --> "drink beer"
 // 30 --> "drink whisky"
 
-const drinkAbout = (age) => {};
+const drinkAbout = (age) => {
+  if (age < 14) return 'drink toddy';
+  if (age < 18) return 'drink coke';
+  if (age < 21) return 'drink beer';
+  return 'drink whisky';
+};
 
 console.log(drinkAbout(14));
 console.log(drinkAbout(18));
