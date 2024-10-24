@@ -19,3 +19,8 @@
 // 30 --> "drink whisky"
 
 const drinkAbout = (age) => {};
+
+console.log(drinkAbout(14));
+console.log(drinkAbout(18));
+console.log(drinkAbout(21));
+console.log(drinkAbout(22));
