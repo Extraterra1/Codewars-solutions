@@ -8,7 +8,10 @@
 // solve("CODe") = "CODE". Uppercase characters > lowecase. Change only the "e" to uppercase.
 // solve("coDE") = "code". Upper == lowercase. Change all to lowercase.
 
-const stringCase = (str) => {};
+const stringCase = (str) => {
+  const uppercase = str.match(/[A-Z]/g)?.length;
+  return uppercase > str.length - uppercase ? str.toUpperCase() : str.toLowerCase();
+};
 
 console.log(stringCase('code'));
 console.log(stringCase('coDe'));
