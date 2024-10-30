@@ -9,3 +9,8 @@
 // solve("coDE") = "code". Upper == lowercase. Change all to lowercase.
 
 const stringCase = (str) => {};
+
+console.log(stringCase('code'));
+console.log(stringCase('coDe'));
+console.log(stringCase('coDE'));
+console.log(stringCase('cODE'));
