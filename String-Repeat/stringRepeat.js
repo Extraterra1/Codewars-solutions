@@ -1,0 +1,1 @@
+const stringRepeat = (n, s) => {};
