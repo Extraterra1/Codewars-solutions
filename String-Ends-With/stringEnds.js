@@ -1,0 +1,1 @@
+const stringEnds = (str, end) => {};
